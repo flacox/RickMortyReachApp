@@ -1,5 +1,7 @@
+import Pagination from "./Pagination";
+
 export default function Characters(props){
-    const { characters, setCharacters } = props;
+    const { characters, setCharacters, currentPage, setCurrentPage } = props;
 
     const backHome = () => {
         setCharacters(null);
@@ -8,6 +10,9 @@ export default function Characters(props){
     return(
         <div className="characters">
             <h1>Personajes de la Serie</h1>
+
+            <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+
             <span className="back-home" onClick={backHome}>Volver a Home</span>
             <div className="container-characters">
                 {characters.map((character, index) => (
@@ -42,6 +47,9 @@ export default function Characters(props){
                     </div>
                 ))}
             </div>
+
+            <Pagination />
+
             <span className="back-home" onClick={backHome}>Volver a Home</span>
         </div>
     );
