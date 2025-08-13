@@ -159,6 +159,36 @@ body {
   background-color: #c82333;
 }
 
+.paginacion {
+  display: flex;
+  justify-content: space-around; /* Centra la barra */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  gap: 8px; /* Espaciado entre botones */
+}
+
+.navbar {
+  background-color: #007bff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .characters {
     padding: 0 20px;

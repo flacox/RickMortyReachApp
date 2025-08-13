@@ -48,7 +48,7 @@ export default function Characters(props){
                 ))}
             </div>
 
-            <Pagination />
+            <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage}/>
 
             <span className="back-home" onClick={backHome}>Volver a Home</span>
         </div>

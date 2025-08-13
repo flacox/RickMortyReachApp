@@ -11,7 +11,8 @@ export default function Pagination(props) {
         if(currentPage !== 1) setCurrentPage (currentPage - 1)
     }
   return (
-    <div style={{display: "flex", justifyContent: "space-around"}}>
+    // <div style={{display: "flex", justifyContent: "space-around"}}>
+    <div className="paginacion">
         <button className="btn-primary" onClick={prev}>Back</button>
         <h3>{currentPage} / 42</h3>
         <button className="btn-primary" onClick={next}>Next</button>
