@@ -213,6 +213,49 @@ body {
   text-decoration: underline;
 }
 
+.card-detalle {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.card-detalle:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #eee;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h2 {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.card-info p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card-info strong {
+  color: #222;
+}
+
+
 @media (max-width: 768px) {
   .characters {
     padding: 0 20px;

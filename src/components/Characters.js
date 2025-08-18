@@ -20,6 +20,7 @@ export default function Characters(props) {
             <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
             <span className="back-home" onClick={backHome}>Volver a Home</span>
+            
             <div className="container-characters">
                 {characters.map((character, index) => (
                     <div className="character-container" key={index}>
