@@ -1,5 +1,3 @@
-
-
 export default function Pagination(props) {
  const {currentPage, setCurrentPage} = props;
 

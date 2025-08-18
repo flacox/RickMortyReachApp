@@ -6,7 +6,6 @@ export default function Navbar() {
         <div>
             <Link to="/">Inicio</Link>
             <Link to="/personajes">Personajes</Link>
-            <Link to="/episodios">Episodios</Link>
         </div>
     </nav>
   );

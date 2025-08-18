@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Inicio from './Pages/Inicio';
 import Personajes from './Pages/Personajes';
-import Episodios from './Pages/Episodios';
 import './App.css';
+import DetallePersonaje from './Pages/DetallePersonaje';
 
 function App() {
   
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Inicio />} />
         <Route path='/personajes' element={<Personajes />} />
-        <Route path='/episodios' element={<Episodios />} />
+        <Route path='/personaje/:id' element={<DetallePersonaje />} />
       </Routes>
     </Router>
   
